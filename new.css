@@ -1,0 +1,12 @@
+.thumbs {
+  display: flex;
+  vertical-align: top;
+}
+
+.thumbs img {
+  display: block;
+}
+
+.main-img {
+  display: inline-block;
+}
