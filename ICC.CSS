@@ -1510,7 +1510,7 @@ ul li:hover .dropdown {
 @media screen and (max-width:992px) {
 
 
-    /* .header .navigation .menu {
+    .header .navigation .menu {
 
         display: block;
         width: 97%;
@@ -1520,7 +1520,7 @@ ul li:hover .dropdown {
         z-index: 50;
         background-color: black;
         opacity: 0;
-    } */
+    }
 
      .navigation .div {
 
@@ -1528,10 +1528,10 @@ ul li:hover .dropdown {
         width: 100%;
     }
 
-    /* .header .navigation .menu li {
+    .header .navigation .menu li {
 
         padding: 10px;
-    } */
+    }
 
     #user {
 
@@ -1564,7 +1564,7 @@ ul li:hover .dropdown {
         position: absolute;
         right: 4%;
         top: 36%;
-        visibility: visible;
+        display: block;
     }
 
     .bars i {
