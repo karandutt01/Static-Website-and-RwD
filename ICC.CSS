@@ -34,9 +34,8 @@ ul {
 
 .header .navigation ul {
     text-transform: uppercase;
-    /* left: 6%;
     position: absolute;
-    top: 11px; */
+    top: 10px;
 }
 
 .header .navigation ul li {
@@ -56,24 +55,23 @@ ul {
 }
 
 .header .search {
-    display: flex;
+    display: block;
+    font-size: 14px;
 }
 
 .header .search .title {
-
     color: white;
     position: absolute;
-    top: 1%;
-    right: 38%;
-    font-size: 1.5em;
-
+    top: 22%;
+    right: 40%;
+    font-size: 21px;
 }
 
 .header .search a {
     color: white;
     position: absolute;
     right: 22%;
-    top: 24%;
+    top: 15%;
     font-size: 23px;
 
 }
@@ -1072,7 +1070,7 @@ ul li:hover .dropdown {
     text-align: center;
 }
 
-@media screen and (max-width:1400px) {
+/* @media screen and (max-width:1400px) {
 
     #user {
         display: none;
@@ -1104,22 +1102,36 @@ ul li:hover .dropdown {
     input[type='checkbox'] {
         opacity: 0;
     }
-}
+} */
 
 @media screen and (max-width:1200px) {
 
 
     .header .search a {
-        font-size: 12px;
-        right: 93%;
+        font-size: 16px;
+        right: -7%;
+        position: absolute;
+        top: 4px;
     }
+
+    .header .navigation ul {
+        position: absolute;
+        right: -13%;
+        margin-right: 20px;
+        font-size: 15px;
+        top: 7px;
+    }
+
 
     .menu-btn {
         display: none;
     }
 
     .header .search .title {
-        font-size: 13px;
+        font-size: 17px;
+        position: absolute;
+        right: -4%;
+        top: 4px;
     }
 
     
@@ -1295,7 +1307,15 @@ ul li:hover .dropdown {
 @media screen and (max-width:1024px) {
 
     .header .search a {
+        display: block;
+        position: absolute;
+        top: 4px;
+        font-size: 13px;
+        right: -51px;
 
+    }
+
+    .header .search .title {
         display: none;
     }
 
@@ -1484,12 +1504,11 @@ ul li:hover .dropdown {
     }
 
     .header .navigation ul {
-
         position: absolute;
-        right: 5%;
+        right: -5%;
         margin-right: 20px;
-        font-size: 1em;
-        top:10px;
+        font-size: 10px;
+        top: 7px;
     }
 
     .video-list .play-icon {
@@ -1509,7 +1528,10 @@ ul li:hover .dropdown {
 
 @media screen and (max-width:992px) {
 
-
+    .header .search a {
+        display: none;
+    }
+    
     .header .navigation .menu {
 
         display: block;
