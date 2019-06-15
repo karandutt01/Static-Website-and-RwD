@@ -30,17 +30,19 @@ ul {
 
 .header .image img {
     width: 100%;
-    padding-left: 0%;
 }
 
 .header .navigation ul {
     text-transform: uppercase;
-    position: relative;
-    top: 28%;
+    /* left: 6%;
+    position: absolute;
+    top: 11px; */
 }
 
 .header .navigation ul li {
-    margin-right: 43px;
+    margin-right: 40px;
+    padding: 4px; 
+    
 }
 
 .header .navigation ul li a {
@@ -50,6 +52,7 @@ ul {
 
 .header .navigation ul li i {
     color: white;
+    margin-left: 6px;
 }
 
 .header .search {
@@ -60,7 +63,7 @@ ul {
 
     color: white;
     position: absolute;
-    top: 27%;
+    top: 1%;
     right: 38%;
     font-size: 1.5em;
 
@@ -79,11 +82,12 @@ ul {
 
     background-color: white;
     display: none;
-    transition: 1s;
-    position: absolute; 
-    top: 155%; 
-    padding: 15px;
-    font-size: 12px;
+    /* transition: 1s; */
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width:300%;
+    top: 6%;
     font-weight: 600;
 }
 
@@ -104,6 +108,7 @@ ul {
 .menu .dropdown ul li a {
     color:#087ac0;
     padding: 3px;
+    text-align: left;
     display: block;
     text-decoration: none;
 }
@@ -179,10 +184,6 @@ ul li:hover .dropdown {
 .team-1-flag .country-2 {
     font-size: 2vw;
 }
-
-/* .commentary {
-    position: static;
-} */
 
 .commentary .live-commentary {
     position: relative;
@@ -462,7 +463,7 @@ ul li:hover .dropdown {
     background-color: #3a006b;
     color:white;
     display: flex;
-    padding:1vw;
+    padding:14px;
     margin-top: 9%;
 }
 
@@ -557,11 +558,6 @@ ul li:hover .dropdown {
     padding: 0px 12px;
     margin: 0px 7px;
     font-size: 1.5vw;
-}
-
-.table thead th {
-
-    font-size: 1.3vw;
 }
 
 .row-5 {
@@ -682,7 +678,7 @@ ul li:hover .dropdown {
 
 .video-list .time {
     position: absolute;
-    top: 9%; right: 8%;
+    top: 9%; right: 13%;
     padding: 1px 3px;
     border:1px solid black;
     background-color:black;
@@ -693,7 +689,7 @@ ul li:hover .dropdown {
 
 .video-list .play-icon {
     position: absolute;
-    left: 40%; top: 20%;
+    left: 42%; top: 20%;
     color: #fff;
     opacity: .8;
     cursor: pointer;
@@ -704,9 +700,9 @@ ul li:hover .dropdown {
 }
 
 .Videos .video-list .video-caption  h6 {
-        font-weight: 600;
-        font-size: 1.2vw;
-        line-height: 16px;
+    font-weight: 600;
+    font-size: 1.2vw;
+    line-height: 16px;
 }
 
 .Videos .video-list .video-caption a {
@@ -1042,10 +1038,8 @@ ul li:hover .dropdown {
     margin-top: 1vw;
 }
 .social {
-    display: -webkit-inline-box;
-    position: relative;
-    left: 36%;
-    margin-bottom: 1%;
+    display: flex;
+    justify-content:  center;
 }
 .social li {
     font-size: 3.2vw;
@@ -1078,18 +1072,18 @@ ul li:hover .dropdown {
     text-align: center;
 }
 
-@media (max-width:1400px) {
+@media screen and (max-width:1400px) {
 
     #user {
-        visibility: hidden;
+        display: none;
     }
 
     .menu-btn {
-        visibility: hidden;
+        display: none;
     }
 
     .bars {
-        visibility: hidden;
+        display: none;
     }
 
     .header .search {
@@ -1112,7 +1106,7 @@ ul li:hover .dropdown {
     }
 }
 
-@media (max-width:1200px) {
+@media screen and (max-width:1200px) {
 
 
     .header .search a {
@@ -1121,14 +1115,7 @@ ul li:hover .dropdown {
     }
 
     .menu-btn {
-        visibility: hidden;
-    }
-
-
-    .header .navigation ul {
-        position: absolute;
-        top: 3%; left: 1%;
-        font-size: 1vw;
+        display: none;
     }
 
     .header .search .title {
@@ -1136,198 +1123,192 @@ ul li:hover .dropdown {
     }
 
     
-        .ranking-banner .rank {
-    
-            position: absolute;
-            top: 21%; right: 5%;
-            font-size: 24px;   
-        }
+    .ranking-banner .rank {
 
-        .ranking-banner .rank-1{
-
-            position: absolute;
-            top: 19%;
-        }
-    
-        .table .country-name img {
-    
-           width: 0%;
-        }
-    
-        .ranking-banner .image img {
-            width: 22%;
-        }
-    
-         .ranking-banner .position {
-    
-            position: absolute;
-            top: 21%;
-            margin-left: -2%;
-        } 
-    
-        .ranking-banner .country-name {
-    
-            position: absolute;
-            left: 32%; top: 22%;
-        }
-    
-         .ranking-banner .player-name {
-    
-            position: absolute;
-            top: 17%;
-        } 
-    
-         .ranking-banner .image-flag img {
-    
-            position: absolute;
-            top: 21%; left: 9%;
-        } 
-    
-         .ranking-banner .position-1 {
-    
-            position: absolute;
-            top: 19%;
-            left: 1%;
-        }
-    
-        .ranking-banner .country-1 {
-    
-            position: absolute;
-            left: 20%;
-            top: 22%;
-        }
-     
-        .table td, .table th {
-    
-            padding: 7px;
-            vertical-align: middle;
-            border-top: 1px solid #dee2e6;
-        }
-    
-        .womens-team .title-section .sub-heading-1 {
-    
-            position: absolute;
-            left: 36%;
-            top: 3%;
-            font-weight: 600;
-            font-size: 1.4vw;
-            text-align: center;
-            width: 39%;
-        }
-    
-        .womens-team .sub-heading-2 {
-    
-            font-size: 14px;
-            width: 34%;
-            position: absolute;
-            top: 2%;
-            left: 41%;
-        }
-    
-        /* .womens-team .ranking-banner .position-1 {
-    
-            position: absolute;
-            top: 20%;
-            font-size: 24px;
-        } */
-    
-        .womens-team .ranking-banner .player-name {
-    
-            position: absolute;
-            top: 17%; left: 11%;
-        }
-    
-        .womens-team .ranking-banner .image-flag img {
-    
-            position: absolute;
-            top: 22%; left:13%;
-        }
-    
-        .womens-team .ranking-banner .country-1 {
-    
-            position: absolute;
-            top: 23%; left:23%;
-        }
-    
-        .womens-team .ranking-banner .image img {
-    
-            width: 18%;
-        }
-    
-        .womens-team .ranking-banner .country-name-1 {
-    
-            position: absolute;
-            left: 26%;
-            top: 21%;
-            font-weight: 600;
-            font-size: 14px;
-        }
-   
-        .womens-team .ranking-banner .ranks {
-
-            position: absolute;
-            top: 20%;
-        }
-
-        .video-list .time {
-
-            position: absolute;
-            top: 8%; right: 10%;
-        }
-
-    
-        #user {
-            visibility: hidden;
-        }
-    
-        .menu-btn {
-            visibility: hidden;
-        }
-    
-        .bars {
-            visibility: hidden;
-        }
-        
-        .search {
-
-            position: absolute;
-            top: 33%;
-            right: 9%;
-        }
-    
-        .header .navigation ul {
-    
-            position: absolute;
-            top: 3%; left: 1%;
-            font-size: 1vw;
-        }
-
-        .social {
-
-        display: -webkit-inline-box;
-        position: relative;
-        left: 34%;
-        margin-bottom: 1%;
-        }
+        position: absolute;
+        top: 23%; right: 5%;
+        font-size: 24px;   
     }
 
-@media (max-width:1024px) {
+    .ranking-banner .rank-1{
 
-    .header .search a {
-
-        visibility: hidden;
+        position: absolute;
+        top: 21%;
     }
+
+    .table .country-name img {
+
+        width: 0%;
+    }
+
+    .ranking-banner .image img {
+        width: 22%;
+    }
+
+        .ranking-banner .position {
+
+        position: absolute;
+        top: 22%;
+        margin-left: -2%;
+    } 
+
+    .ranking-banner .country-name {
+
+        position: absolute;
+        left: 32%; top: 23%;
+    }
+
+        .ranking-banner .player-name {
+
+        position: absolute;
+        top: 19%;
+    } 
+
+        .ranking-banner .image-flag img {
+
+        position: absolute;
+        top: 23%; left: 10%;
+    } 
+
+        .ranking-banner .position-1 {
+
+        position: absolute;
+        top: 21%;
+        left: 1%;
+    }
+
+    .ranking-banner .country-1 {
+
+        position: absolute;
+        left: 22%;
+        top: 25%;
+    }
+    
+    .table td, .table th {
+
+        padding: 7px;
+        /* vertical-align: middle; */
+        border-top: 1px solid #dee2e6;
+    }
+
+    .womens-team .title-section .sub-heading-1 {
+
+        position: absolute;
+        left: 36%;
+        top: 3%;
+        font-weight: 600;
+        font-size: 1.4vw;
+        text-align: center;
+        width: 39%;
+    }
+
+    .womens-team .sub-heading-2 {
+
+        font-size: 14px;
+        width: 34%;
+        position: absolute;
+        top: 2%;
+        left: 41%;
+    }
+
+    .womens-team .ranking-banner .position-2 {
+        font-size: 25px;
+        position: absolute;
+        top: 21%;
+        left: 2%;
+        font-weight: 600;
+    }
+
+    .womens-team .ranking-banner .player-name {
+
+        position: absolute;
+        top: 19%; left: 11%;
+    }
+
+    .womens-team .ranking-banner .image-flag img {
+
+        position: absolute;
+        top: 24%; left:13%;
+    }
+
+    .womens-team .ranking-banner .country-1 {
+
+        position: absolute;
+        top: 25%; left:23%;
+    }
+
+    .womens-team .ranking-banner .image img {
+
+        width: 18%;
+    }
+
+    .womens-team .ranking-banner .country-name-1 {
+
+        position: absolute;
+        left: 26%;
+        top: 23%;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .womens-team .ranking-banner .ranks {
+
+        position: absolute;
+        top: 22%;
+    }
+
+    .video-list .time {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
 
     #user {
-        visibility: hidden;
+        display: none;
     }
 
     .menu-btn {
-        visibility: hidden;
+        display: none;
     }
 
     .bars {
-        visibility: hidden;
+        display: none;
+    }
+    
+    .search {
+
+        position: absolute;
+        top: 33%;
+        right: 9%;
+    }
+
+    .social {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .header .search a {
+
+        display: none;
+    }
+
+    #user {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .bars {
+        display: none;
     }
   
     .table .country-name img {
@@ -1357,7 +1338,7 @@ ul li:hover .dropdown {
     .ranking-banner .country-name {
 
         position: absolute;
-        left: 32%;
+        left: 33%;
         top: 21%;
         font-weight: bold;
     } 
@@ -1365,36 +1346,34 @@ ul li:hover .dropdown {
     .ranking-banner .player-name {
 
         position: absolute;
-        top: 17%;
+        top: 16%;
         left: 10%;
     }
 
     .ranking-banner .image-flag img {
 
         position: absolute;
-        top: 21%;
+        top: 20%;
         left: 12%;
     }
 
     .ranking-banner .position-1 {
-
         position: absolute;
         top: 18%;
-        font-size: 2.5vw;
+        font-size: 1.6em;
         left: 2%;
     }
 
     .ranking-banner .country-1 {
-
         position: absolute;
-        left: 22%;
-        top: 22%;
+        left: 24%;
+        top: 21%;
     } 
 
     .ranking-banner .rank-1 {
 
         position: absolute;
-        top: 19%;
+        top: 18%;
     }
 
     .table td, .table th {
@@ -1486,15 +1465,15 @@ ul li:hover .dropdown {
     }
     
     #user {
-        visibility: hidden;
+        display: none;
     }
 
     .menu-btn {
-        visibility: hidden;
+        display: none;
     }
 
     .bars {
-        visibility: hidden;
+        display: none;
     }
 
     .search {
@@ -1507,29 +1486,31 @@ ul li:hover .dropdown {
     .header .navigation ul {
 
         position: absolute;
-        top: 3%; right: 2%;
-        font-size: 1vw;
+        right: 5%;
+        margin-right: 20px;
+        font-size: 1em;
+        top:10px;
     }
 
     .video-list .play-icon {
-        position: absolute;
-        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .social {
 
-        display: -webkit-inline-box;
-        position: relative;
-        left: 34%;
-        margin-bottom: 1%;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
-@media (max-width:992px) {
+@media screen and (max-width:992px) {
 
 
-    .header .navigation .menu {
+    /* .header .navigation .menu {
 
         display: block;
         width: 97%;
@@ -1539,7 +1520,7 @@ ul li:hover .dropdown {
         z-index: 50;
         background-color: black;
         opacity: 0;
-    }
+    } */
 
      .navigation .div {
 
@@ -1547,10 +1528,10 @@ ul li:hover .dropdown {
         width: 100%;
     }
 
-    .header .navigation .menu li {
+    /* .header .navigation .menu li {
 
         padding: 10px;
-    }
+    } */
 
     #user {
 
@@ -1620,16 +1601,22 @@ ul li:hover .dropdown {
        margin-top: 2%;
    }
 
-   /* .ranking-banner {
+   .ranking-banner {
 
     margin-top: 4%;
+   }
+
+   .ranking-banner .country-name {
+        position: absolute;
+        top: 19%;
    }
 
    .ranking-banner .rank {
 
     position: absolute;
-    top: 22%; right: 3%;
-    font-size: 33px;  
+    top: 18%;
+    right: 3%;
+    font-size: 24px;
     }
 
     .ranking-banner .rank-1 {
@@ -1638,13 +1625,13 @@ ul li:hover .dropdown {
         position: absolute;
         right: 3%; top: 21%;
         font-weight: 600;
-    } */
+    }
 
     #test-ranking .sub-heading {
 
         font-weight: 600;
         position: absolute;
-        top: 4%;
+        top: 1%;
         width: 52%;
         font-size: 1.5vw;
         left: 26%;
@@ -1656,67 +1643,73 @@ ul li:hover .dropdown {
     width: 0%;
     }
 
-    .table td, .table th {
+    /* .table td, .table th {
 
         padding: 7px;
         vertical-align: middle;
         border-top: 1px solid #dee2e6;
-    }
+    } */
 
-    .table td {
+    /* .table td {
 
         font-size: 1.5vw;
-    }
+    } */
 
     .ranking-banner .position-1  {
 
         position: absolute;
-        top: 17%;
+        top: 14%;
     }
 
-    .ranking-banner .player-name {
+    .ranking-banner .position  {
 
         position: absolute;
-        top: 16%;
+        top: 18%;
+    }
+
+
+    .ranking-banner .player-name {
+        position: absolute;
+        top: 12%;
+        left: 31px;
     }
 
     .ranking-banner .image-flag img {
-
         position: absolute;
-        top: 20%;
+        top: 16%;
+        left: 36px;
     }
 
     .ranking-banner .country-1 {
-        
         position: absolute;
-        top: 21%;
+        top: 17%;
+        left: 66px;
     }
 
     .ranking-banner .rank-1 {
 
         position: absolute;
-        top: 18%;
+        top: 15%;
+        font-size: 23px;
     }
 
     .womens-team .ranking-banner .position-2 {
 
         font-size: 2.2vw;
         position: absolute;
-        top: 18%;
+        top: 17%;
         left: 2%;
         font-weight: 600;
     }
 
-    /* .womens-team .title-section .sub-heading-1 {
+    .womens-team .title-section .sub-heading-1 {
 
         position: absolute;
-        left: 28%;
-        top: 3%;
-        font-weight: 600;
-        font-size: 30px;
+        left: 32%;
+        top: 2%;
         width: 48%;
         text-align: center;
-    } */
+    }
 
     .womens-team .sub-heading-2 {
 
@@ -1731,7 +1724,7 @@ ul li:hover .dropdown {
     .womens-team .ranking-banner .ranks {
 
         position: absolute;
-        top: 19%;
+        top: 17%;
         right: 5%;
         font-size: 2vw;
     }
@@ -1746,20 +1739,21 @@ ul li:hover .dropdown {
     .womens-team .ranking-banner .player-name {
 
         position: absolute;
-        top: 15%;
+        top: 13%;
+        left: 12%;
     }
 
     .womens-team .ranking-banner .image-flag img {
 
         position: absolute;
-        top: 20%; left: 13%;
+        top: 18%;
+        left: 13%;
     }
 
     .womens-team .ranking-banner .country-1 {
-
         position: absolute;
-        top: 20%;
-        left: 25%;
+        top: 18%;
+        left: 27%;
     }
 
     .womens-team .ranking-banner .image img {
@@ -1771,96 +1765,35 @@ ul li:hover .dropdown {
 
         position: absolute;
         left: 29%;
-        top: 19%;
+        top: 18%;
         font-weight: 600;
         font-size: 1.5vw;
     }
 
     .video-list .play-icon {
 
-        position: absolute;
-        top: 15%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
 
     .social {
 
-        display: -webkit-inline-box;
-        position: relative;
-        left: 33%;
-        margin-bottom: 1%;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
 
 }
 
-@media (max-width:850px) {
-
-    .ranking-banner .position {
-
-        position: absolute;
-        top: 18%;
-    }
-
-    .ranking-banner .country-name {
-
-        position: absolute;
-        top: 19%;
-    }
-
-    .ranking-banner .rank {
-
-        position: absolute;
-        top: 18%;
-    }
-
-    .ranking-banner .position-1  {
-
-        position: absolute;
-        top: 16%;
-    }
-
-    .ranking-banner .player-name {
-
-        position: absolute;
-        top: 15%;
-    }
-
-    .ranking-banner .image-flag img {
-
-        position: absolute;
-        top: 19%;
-    }
-
-    .ranking-banner .country-1 {
-        
-        position: absolute;
-        top: 20%;
-    }
-
-    .ranking-banner .rank-1 {
-
-        position: absolute;
-        top: 16%;
-    }
-
-    .womens-team .ranking-banner .position-2 {
-
-        position: absolute;
-        top: 18%;
-    }
-
-    .womens-team .ranking-banner .country-name-1 {
-
-        position: absolute;
-        top: 19%;
-    }
-}
-
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
      
     .video-list .play-icon {
 
-        position: absolute;
-        top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .worldcup-list .camera-icon {
@@ -1871,67 +1804,120 @@ ul li:hover .dropdown {
         font-size: 3.5vw;
     }
 
+    #test-ranking .sub-heading {
+        font-weight: 600;
+        position: absolute;
+        top: 1%;
+        width: 52%;
+        font-size: 12px;
+        left: 28%;
+        text-align: center;
+    }
+
     .ranking-banner .rank {
+        position: absolute;
+        top: 12%;
+        right: 5%;
+        font-size: 19px;   
+    }
+
+    .ranking-banner .image-flag img {
 
         position: absolute;
-        top: 18%;
-        right: 5%;
-        font-size: 23px;    
+        top: 15%;
+        left:15%;
     }
 
     .ranking-banner .position {
-
         position: absolute;
-        top: 20%;
+        top: 12%;
+        left: 5%;
+        font-size: 20px;
         
     }
 
     .ranking-banner .country-name {
-
         position: absolute;
-        left: 32%;
-        top: 19%;
+        left: 35%;
+        top: 13%;
         font-weight: bold;
     } 
 
-    .ranking-banner .position {
-
+    .ranking-banner .position-1 {
         position: absolute;
-        top: 18%;
+        top: 11%;
+    }
+
+    .ranking-banner .player-name{
+        position: relative;
+        top: -8px;
+        left: 6%;
     }
 
     .ranking-banner .country-1 {
 
         position: absolute;
-        left: 24%;
-        top: 19%;
+        left: 28%;
+        top: 15%;
+    }
+
+    .ranking-banner .rank-1 {
+        position: absolute;
+        right: 5%;
+        top: 12%;
+        font-size: 15px;
     }
 
     .womens-team .ranking-banner .position-2 {
-
         position: absolute;
-        top: 17%;
+        top: 13%;
     }
 
     .womens-team .ranking-banner .country-name-1 {
-
         position: absolute;
-        top: 19%;
+        top: 14%;
+        left: 33%;
+    }
+
+    .womens-team .ranking-banner .player-name {
+        position: absolute;
+        top: 11%;
+        left: 12%;
+    }
+
+    .womens-team .ranking-banner .image-flag img {
+        position: absolute;
+        top: 16%;
+        left: 15%;
+    }
+
+    .womens-team .title-section .sub-heading-1 {
+        position: absolute;
+        left: 34%;
+        top: 2%;
+        width: 48%;
+        text-align: center;
+    }
+
+    .ranking-banner .rank-1 {
+        position: absolute;
+        right: 5%;
+        top: 13%;
     }
 
     .womens-team .ranking-banner .ranks {
 
         position: absolute;
-        top: 18%;
+        top: 14%;
     }
 
     .social {
 
-        display: -webkit-inline-box;
-        position: relative;
-        left: 30%;
-        margin-bottom: 1%;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
 
 }
 
